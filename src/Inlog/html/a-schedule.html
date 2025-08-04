@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A-DAG</title>
+  <link rel="stylesheet" href="/src//Inlog/css/a-schedule.css" />
+</head>
+<body>
+  <div class="schedule-container">
+    <header>
+      <a href="/src/Inlog/html/dashboard.html" class="back-button">←</a>
+      <h2>A-DAG</h2>
+      <div class="menu-icon">☰</div>
+    </header>
+
+    <main>
+      <div class="table-header">
+        <div>Tid</div>
+        <div>Område</div>
+        <div>Postnummer</div>
+        <div>Fordon</div>
+        <div>Ordinarie</div>
+        <div>Extra</div>
+      </div>
+      <div id="schedule-rows"></div>
+    </main>
+
+    <footer>
+      www.postmaister.com
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script type="module" src="/src/Inlog/js/a-schedule.js"></script>
+</body>
+</html>

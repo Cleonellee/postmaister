@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title> 
+  <link rel="stylesheet" href="/src/Inlog/css/dashboard.css">
+  <link rel="stylesheet" href="/src/Inlog/html/register.html" />
+  <link rel="stylesheet" href="/src/Inlog/html/login.html" />
+  <link rel="stylesheet" href="/src/Inlog/css/responsive.css" />
+</head>
+<body>
+  
+  <div class="dashboard-container">
+    <header>
+      <a href="/src/Inlog/html/login.html" class="back-button">←</a>
+      <h3 id="full_name">Välkommen!</h3>
+      <div class="menu-icon">☰</div>
+
+      <div class="menu-dropdown" id="menu-dropdown">
+  <div class="menu-header">
+    <button class="close-menu" id="close-menu">&times;</button>
+  </div>
+  <ul> 
+    <li><a href="/src/Inlog/html/dashboard.html">Dashboard</a></li>
+    <li><a href="/src/Inlog/html/profile-settings.html">Profilinställningar</a></li>
+    <li><button id="logout-button">Logga ut</button></li>
+  </ul>
+</div>
+    </header>
+    <div><img src="/img/postmaister_letter_bg_realistic-removebg-preview.png" alt="Logo" class="logo"/></div>
+    
+
+    <div class="search-bar">
+      <input type="text" placeholder="SÖK">
+     
+    </div>
+<div>
+   <footer>AI KNAPP</footer>
+</div>
+    <div class="tiles">
+      <button class="tile" onclick="location.href='/src/Inlog/html/schedule.html'">Dagens Schema</button>
+      <button class="tile" onclick="location.href='/src/Inlog/html/week-schedule.html'">Vecko Planering</button>
+      <button class="tile">Områdes information</button>
+      <button class="tile">Vad du vill</button>
+      <button class="tile">Weather</button>
+      <button class="tile">Adressbok</button>
+      <button class="tile">Intranät</button>
+      <button class="tile">Fordon</button>
+      <button class="tile">TwoMillionsgatan 22</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/Inlog/js/dashboard.js"></script>
+  <script type="module" src="/src/Inlog/js/login.js"></script>
+  <script type="module" src="/src/Inlog/js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verified</title>
+  <base href="./" />
+  <link rel="stylesheet" href="/src/Inlog/css/verify.css" />
+  <link rel="stylesheet" href="/src/Inlog/css/responsive.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="verify-box">
+      <img src="/img/postmaister_letter_bg_realistic-removebg-preview.png" alt="Logo" class="logo"/>
+      <h2>Email Verified!</h2>
+      <p>Your account is now active.</p>
+      <button onclick="redirectToLogin()">Go to Login</button>
+    </div>
+  </div>
+
+  <script>
+    function redirectToLogin() {
+      window.location.href = "/src/Inlog/html/login.html";
+    }
+  </script>
+</body>
+</html>

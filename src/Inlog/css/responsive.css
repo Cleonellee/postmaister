@@ -1,0 +1,47 @@
+/* RESPONSIVE BAS – GÄLLER FÖR HELA SYSTEMET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+input,
+button {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+/* Enkla mobilanpassningar */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input,
+  button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .logo {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}

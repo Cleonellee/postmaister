@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <base href="./" />
+  <link rel="stylesheet" href="/src/Inlog/html/login.html">
+  <link rel="stylesheet" href="/src/Inlog/css/register.css" />
+  <link rel="stylesheet" href="/src/Inlog/css/responsive.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="register-box">
+      <a href="/src/Inlog/html/login.html" class="back-button">←</a>
+      <img src="/img/postmaister_letter_bg_realistic-removebg-preview.png" alt="Logo" class="logo"/>
+      <h2>Create new Account</h2>
+      <input type="text" id="name" placeholder="Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <input type="date" id="dob" placeholder="Select date of birth" />
+      <button onclick="signUp()">Sign up</button>
+      <a href="https://www.postmaister.com">www.postmaister.com</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script type="module" src="/src/Inlog/js/register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veckoplanering</title>
+  <link rel="stylesheet" href="/src/Inlog/css/week-schedule.css" />
+</head>
+<body>
+
+  <div class="schedule-container">
+      <a href="/src/Inlog/html/dashboard.html" class="back-button">←</a>
+      <h2 id="vecko">Veckoplanering</h2>
+<div class="week-controls">
+  <button id="prev-week">← Föregående vecka</button>
+  <button id="next-week">Nästa vecka →</button>
+</div>
+
+<div id="week-schedule"></div>
+
+    <main id="week-schedule" class="week-schedule">
+      <!-- Dagblock genereras i JS -->
+    </main>
+
+    <footer>www.postmaister.com</footer>
+  </div>
+
+  <script type="module" src="/src/Inlog/js/week-schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profilinställningar</title>
+  <link rel="stylesheet" href="/src/Inlog/css/profile-settings.css" />
+</head>
+<body>
+  <div class="settings-container">
+    <header>
+      
+      <a href="/src/Inlog/html/dashboard.html" class="back-button">&larr;</a>
+      <h2>Profilinställningar</h2>
+      <div class="menu-icon">&#9776;</div>
+    </header>
+
+    <form id="settings-form">
+      <section>
+        <h3>Personlig Information</h3>
+        <input type="text" id="name" placeholder="Namn" />
+        <input type="email" id="email" placeholder="E-post" />
+        <input type="text" id="phone" placeholder="Telefonnummer" />
+      </section>
+
+      <section>
+        <h3>Arbetsrelaterat</h3>
+        <input type="text" id="area" placeholder="Område (t.ex. A1)" />
+        <select id="vehicle">
+          <option value="">Välj fordon</option>
+          <option value="Cykel">Elcykel</option>
+          <option value="Bil">Bil</option>
+          <option value="Paxster">Paxster</option>
+           <option value="Kyburz">Kyburz </option>
+        </select>
+      </section>
+
+      <section>
+        <h3>Aviseringar</h3>
+        <label><input type="checkbox" id="notify_email" /> E-postnotiser</label>
+        <label><input type="checkbox" id="notify_push" /> Pushnotiser</label>
+      </section>
+
+      <section>
+        <h3>Språk och Tema</h3>
+        <select id="language">
+          <option value="sv">Svenska</option>
+          <option value="en">English</option>
+          <label><input type="checkbox" id="dark_mode" /> Mörkt läge</label>
+        </select>
+        
+      </section>
+
+      <section>
+        <h3>Säkerhet</h3>
+        <input type="password" id="new_password" placeholder="Nytt lösenord" />
+        <input type="password" id="confirm_password" placeholder="Bekräfta lösenord" />
+      </section>
+
+      <button type="submit">Spara Inställningar</button>
+    </form>
+<button id="logout-button">Logga ut</button>
+
+    <footer>
+      www.postmaister.com
+    </footer>
+  
+
+  <script type="module" src="/src/Inlog/js/profile-settings.js"></script>
+</body>
+</html>

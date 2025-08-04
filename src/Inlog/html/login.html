@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <base href="./" />
+  <link rel="stylesheet" href="/src/Inlog/html/forgot-password.html">
+  <link rel="stylesheet" href="/src/Inlog/html/register.html">
+  <link rel="stylesheet" href="/src/Inlog/css/login.css" />
+  <link rel="stylesheet" href="/src/Inlog/css/responsive.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <img src="/img/postmaister_letter_bg_realistic-removebg-preview.png" alt="Logo" class="logo"/>
+      <h2>Welcome !</h2>
+      <input type="text" id="username" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Log in</button>
+      <a href="/src/Inlog/html/forgot-password.html">Forgot Password</a>
+      <a href="/src/Inlog/html/register.html"><button>Create Account</button></a>
+      <p>Don't Have an Account?</p>
+      <a href="https://www.postmaister.com">www.postmaister.com</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script type="module" src="/src/Inlog/js/login.js"></script>
+</body>
+</html>
